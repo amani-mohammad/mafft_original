@@ -1,0 +1,5 @@
+foreach i ( *.c *.h ) 
+	sed 's/float/double/g' $i > $i.double
+	echo $i
+	mv $i.double $i
+end
