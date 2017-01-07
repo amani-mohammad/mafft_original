@@ -352,7 +352,7 @@ void extendedmtx( double **matrix, double *freq, unsigned char *amino, char *ami
 	else
 		for( i=0; i<20; i++ ) freq[i] = freqd[i];
 #endif
-#if 0
+#if 0 //this if 0 means that the code between if 0 and endif will not be compiled
 	for( i=0; i<nalphabets; i++ )
 	{
 		fprintf( stderr, "%d: %c, %d, %f\n", i, amino[i], amino_grp[amino[i]], freq[i] );
