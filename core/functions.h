@@ -1,3 +1,4 @@
+//all functions used in the whole code are declared here
 extern int intlen( int *num );
 extern char seqcheck( char **seq );
 extern void scmx_calc( int icyc, char **aseq, double *effarr, double **scmx );
@@ -401,6 +402,6 @@ extern double distcompact_msa( char *seq1, char *seq2, int *skiptable1, int *ski
 extern void fillimp( double **impmtx, double *imp, int clus1, int clus2, int lgth1, int lgth2, char **seq1, char **seq2, double *eff1, double *eff2, double *eff1_kozo, double *eff2_kozo, LocalHom ***localhom, char *swaplist, int forscore, int *orinum1, int *orinum2 );
 extern int pairlocalalign( int ngui, int lgui, char **namegui, char **seqgui, double **distancemtx, LocalHom **localhomtable, int argc, char **argv );
 extern char creverse( char f );
-#ifndef mingw
+#ifndef mingw //check for MINGW compiler
 extern void setstacksize( rlim_t );
 #endif

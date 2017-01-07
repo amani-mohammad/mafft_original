@@ -241,7 +241,7 @@ void BLOSUMmtx( int n, double **matrix, double *freq, unsigned char *amino, char
 	else if( n == 90 ) tmpmtx = tmpmtx90;
 	else if( n == 100 ) tmpmtx = tmpmtx100;
 	else if( n == 0 ) tmpmtx = tmpmtx0;
-	else if( n == -1 ) tmpmtx = loadaamtx(); //in which file and what is this matrix?
+	else if( n == -1 ) tmpmtx = loadaamtx(); //in which file and what is this matrix? // this method declared in functions.h file
 	else //if n is not BLOSUM correct number, show error and exit
 	{
 		fprintf( stderr, "blosum %d ?\n", n );
