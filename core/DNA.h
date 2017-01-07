@@ -1,3 +1,4 @@
+//I think this file contains the definitions of matrices, vectors and variables used for DNA alignment scoring
 #define DEFAULTGOP_N -1530
 #define DEFAULTGEP_N  0
 #define DEFAULTOFS_N -369 
