@@ -232,6 +232,7 @@ void BLOSUMmtx( int n, double **matrix, double *freq, unsigned char *amino, char
 	double av;
 	double *tmpmtx;
 
+    //select BLOSUM matrix based on the parameter n sent
 	if( n == 30 ) tmpmtx = tmpmtx30;
 	else if( n == 45 ) tmpmtx = tmpmtx45;
 	else if( n == 50 ) tmpmtx = tmpmtx50;
@@ -240,13 +241,14 @@ void BLOSUMmtx( int n, double **matrix, double *freq, unsigned char *amino, char
 	else if( n == 90 ) tmpmtx = tmpmtx90;
 	else if( n == 100 ) tmpmtx = tmpmtx100;
 	else if( n == 0 ) tmpmtx = tmpmtx0;
-	else if( n == -1 ) tmpmtx = loadaamtx();
-	else
+	else if( n == -1 ) tmpmtx = loadaamtx(); //in which file and what is this matrix?
+	else //if n is not BLOSUM correct number, show error and exit
 	{
 		fprintf( stderr, "blosum %d ?\n", n );
 		exit( 1 );
 	}
 
+    //copy the selected BLOSUM matrix to the input matrix
 	count = 0;
 	for( i=0; i<20; i++ )
 	{
@@ -255,7 +257,8 @@ void BLOSUMmtx( int n, double **matrix, double *freq, unsigned char *amino, char
 			matrix[i][j] = matrix[j][i] = (double)tmpmtx[count++];
 		}
 	}
-	if( n == -1 && tmpmtx[400] != -1.0 ) 
+    //setting frequency values
+	if( n == -1 && tmpmtx[400] != -1.0 ) //i need to understand what is n=-1?
 	{
 		for( i=0; i<20; i++ ) freq[i] = tmpmtx[400+i];
 		av = 0.0;
@@ -270,7 +273,7 @@ void BLOSUMmtx( int n, double **matrix, double *freq, unsigned char *amino, char
 	for( i=0; i<20; i++ )
 		av += matrix[i][i];
 	av /= 20;
-	fprintf( stdout, "av = %f\n", av );
+	fprintf( stdout, "av = %f\n", av ); //what is av?
 
 	for( i=0; i<20; i++ ) for( j=0; j<20; j++ )
 		matrix[i][j] /= av;
@@ -299,6 +302,7 @@ void BLOSUMmtx( int n, double **matrix, double *freq, unsigned char *amino, char
 	fprintf( stdout, "wcount = %f\n", wcount );
 	fprintf( stdout, "tmptmp = %f\n", tmptmp );
 
+    //print the final BLOSUM matrix parameter
 	for( i=0; i<20; i++ )
 	{
 		for( j=0; j<=i; j++ )
@@ -310,16 +314,17 @@ void BLOSUMmtx( int n, double **matrix, double *freq, unsigned char *amino, char
 	exit( 1 );
 #endif
 
+    //set amino and amino_grp parameters
     for( i=0; i<26; i++ ) amino[i] = locaminod[i];
     for( i=0; i<26; i++ ) amino_grp[(int)amino[i]] = locgrpd[i];
 }
-
+//I need to know when this method is called
 void extendedmtx( double **matrix, double *freq, unsigned char *amino, char *amino_grp )
 {
 	int i;
 	int j;
 
-	for( i=0; i<nalphabets; i++ ) 
+	for( i=0; i<nalphabets; i++ ) //where is this 'nalphabets' variable is declared ?!!
 	{
 //		fprintf( stderr, "i=%d, i=%c\n", i, i );
 		amino[i] = (unsigned char)i;
