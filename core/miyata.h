@@ -1,3 +1,4 @@
+//I need to know what these values are used for - for amino acids - ?
 double polarity_[] =
 {
 	 8.1,  /* A */

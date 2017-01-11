@@ -1,6 +1,6 @@
 #include "mltaln.h"
 
-#define DEBUG 0
+#define DEBUG 0 //i need to know what does this mean ?
 
 static int seedoffset;
 
@@ -36,7 +36,7 @@ void arguments( int argc, char *argv[] )
             switch( c )
             {
 				case 'o':
-					seedoffset = myatoi( *++argv );
+					seedoffset = myatoi( *++argv ); //what is myatoi? and where is it defined?
 					fprintf( stderr, "seedoffset = %d\n", seedoffset );
 					--argc;
 					goto nextoption;
@@ -68,7 +68,7 @@ void arguments( int argc, char *argv[] )
 }
 
 
-
+//finallyyyyyyy, the main method :D
 int main( int argc, char *argv[] )
 {
 	FILE *infp;
@@ -91,15 +91,15 @@ int main( int argc, char *argv[] )
 		}
 	}
 	else
-		infp = stdin;
+		infp = stdin; //what is stdin?
 
 
 //	dorp = NOTSPECIFIED;
 	getnumlen_casepreserve( infp, &nlenmin );
-
+    //what are njob, nlenmax and dorp? and where are they defined?
 	fprintf( stderr, "%d x %d - %d %c\n", njob, nlenmax, nlenmin, dorp );
 
-	seq = AllocateCharMtx( njob, nlenmax+1 );
+	seq = AllocateCharMtx( njob, nlenmax+1 ); //where are those methods and what they do ?
 	name = AllocateCharMtx( njob, B+1 );
 	nlen = AllocateIntVec( njob );
 
@@ -107,7 +107,7 @@ int main( int argc, char *argv[] )
 
 //	for( i=0; i<njob; i++ ) gappick_samestring( seq[i] );
 
-#if 0
+#if 0 //this code is not compiled
 	FILE *origfp;
 	origfp = fopen( "_original", "w" );
 	if( !origfp )

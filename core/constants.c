@@ -12,7 +12,7 @@
 #define NORMALIZE1 1
 
 
-static int shishagonyuu( double in )
+static int shishagonyuu( double in ) //this method returns the integer value of a double value
 {
 	int out;
 	if     ( in >  0.0 ) out = ( (int)( in + 0.5 ) );
@@ -99,7 +99,7 @@ static void calcfreq_nuc( int nseq, char **seq, double *datafreq )
 		l = strlen( seq[i] );
 		for( j=0; j<l; j++ )
 		{
-			aan = amino_n[(int)seq[i][j]];
+			aan = amino_n[(int)seq[i][j]]; //is amino_n defined as global ?
 			if( aan == 4 ) aan = 3;
 			if( aan >= 0 && aan < 4 )
 			{
@@ -200,7 +200,7 @@ static void generatenuc1pam( double **pam1, int kimuraR, double *freq )
 {
 	int i, j;
 	double R[4][4], mut[4], total, tmp;
-
+//what is kimuraR ?
 	R[0][0] = 0.0;     R[0][1] = kimuraR; R[0][2] = 1.0;     R[0][3] = 1.0;
 	R[1][0] = kimuraR; R[1][1] = 0.0;     R[1][2] = 1.0;     R[1][3] = 1.0;
 	R[2][0] = 1.0;     R[2][1] = 1.0;     R[2][2] = 0.0;     R[2][3] = kimuraR;
@@ -1352,7 +1352,7 @@ void constants( int nseq, char **seq )
 
 	if( dorp == 'd' )  /* DNA */
 	{
-#if 0 // ???
+#if 0 // ??? //this part is not compiled and not executed - between if 0 and endif
 	    for( i=0; i<5; i++) for( j=0; j<5; j++ )
         	n_disLN[i][j] = (double)n_dis[i][j] + offset - offsetLN;
 	    for( i=5; i<10; i++) for( j=5; j<10; j++ )

@@ -5,7 +5,7 @@
 #define DEFAULTGEP_J   -00 
 #define DEFAULTOFS_J  -123  /* +10 -- -50  teido ka ? */
 #define DEFAULTPAMN  200
-
+// I need to know what is JTT matrix and what it is used for ?
 void JTTmtx( double **rsr, double *freq, unsigned char locamino[26], char locgrp[26], int isTM )
 {
 	int i, j;

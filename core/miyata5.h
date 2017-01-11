@@ -1,3 +1,4 @@
+//these are values used for amino acids, but till now I don't know what are they used for ?
 int locpenaltym = -1440;
 int exgpm = +0;  /* != 0 nisuruto kowareru. exgp ha constants.c de kurikomu */
 char locaminom[] = "ARNDCQEGHILKMFPSTWYVBZX.-J";

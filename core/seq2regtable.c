@@ -4,7 +4,7 @@
 
 char *weboutfile = NULL;
 
-
+//is this the method called to parse the run command ?
 void arguments( int argc, char *argv[] )
 {
     int c;
@@ -16,7 +16,7 @@ void arguments( int argc, char *argv[] )
             switch( c )
             {
 				case 'i':
-					inputfile = *++argv;
+					inputfile = *++argv; //input file variable is defined in mltaln.h
 					fprintf( stderr, "inputfile = %s\n", inputfile );
 					--argc;
 					goto nextoption;
