@@ -1,7 +1,7 @@
 #include "mltaln.h"
 
-#define TEST 0
-
+#define TEST 0 //macro
+//main again ?!! I need to know how there are many main functions in the same code :D
 int main()
 {
 	int i, j;
