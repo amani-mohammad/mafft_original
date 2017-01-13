@@ -1,3 +1,4 @@
+//This file contains the code of pairwise alignment. It is so important and needs more study
 #include "mltaln.h"
 
 #define DEBUG 0
@@ -51,7 +52,7 @@ typedef struct _lastresx
 	Aln *aln;
 } Lastresx;
 
-#ifdef enablemultithread
+#ifdef enablemultithread //i need to know where it is defined?
 typedef struct _jobtable
 {
 	int i;
@@ -92,7 +93,7 @@ typedef struct _lastcallthread_arg
 #endif
 } lastcallthread_arg_t;
 
-static void t2u( char *seq )
+static void t2u( char *seq ) //convert capital letters to small and t to u
 {
 	while( *seq )
 	{
@@ -111,7 +112,7 @@ static void t2u( char *seq )
 	}
 }
 
-static int removex( char *d, char *m )
+static int removex( char *d, char *m )//create new sequence 'd' without x and return x count in the input sequence
 {
 	int val = 0;
 	while( *m != 0 )
@@ -229,7 +230,7 @@ static void putlocalhom_last( char *s1, char *s2, LocalHom *localhompt, Lastresx
 	}
 }
 
-static int countcomma( char *s )
+static int countcomma( char *s )//get count of comma in sequence s
 {
 	int v = 0;
 	while( *s ) if( *s++ == ',' ) v++;
@@ -259,7 +260,7 @@ static double recallpairfoldalign( char **mseq1, char **mseq2, int m1, int m2, i
 
 	readpairfoldalign( fp, *mseq1, *mseq2, aln1, aln2, m1, m2, &of1tmp, &of2tmp, alloclen );
 
-	if( strstr( foldalignopt, "-global") )
+	if( strstr( foldalignopt, "-global") ) //i think this choose between local or global alignment
 	{
 		fprintf( stderr, "Calling G__align11\n" );
 		value = G__align11( n_dis_consweight_multi, mseq1, mseq2, alloclen, outgap, outgap );
@@ -1643,7 +1644,7 @@ static void arguments( int argc, char *argv[] )
     while( --argc > 0 && (*++argv)[0] == '-' )
 	{
 //		reporterr( "(*argv)[0] in while loop = %s\n", (*argv) );
-        while ( ( c = *++argv[0] ) )
+        while ( ( c = *++argv[0] ) ) //parse arguments in the running command
 		{
             switch( c )
             {
@@ -1921,7 +1922,7 @@ static void arguments( int argc, char *argv[] )
 	}
 }
 
-int countamino( char *s, int end )
+int countamino( char *s, int end ) //count the number of amino acids in the sequence
 {
 	int val = 0;
 	while( end-- )
