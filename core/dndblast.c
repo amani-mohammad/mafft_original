@@ -1,3 +1,4 @@
+//I think this file uses BLAST to make alignment
 #include "mltaln.h"
 #include <sys/types.h>
 #include <unistd.h>

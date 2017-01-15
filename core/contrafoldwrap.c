@@ -24,7 +24,7 @@ void unknown_n( char *out, char *in )
 		out++;
 		in++;
 	}
-	*out = 0;
+	*out = 0; // i need to understand why it sets *out = 0, this happens with all created char*
 }
 
 void outcontrafold( FILE *fp, RNApair **pairprob, int length )
@@ -97,7 +97,7 @@ static void readcontrafold( FILE *fp, RNApair **pairprob, int length )
 }
 #endif
 
-void arguments( int argc, char *argv[] )
+void arguments( int argc, char *argv[] ) //parse arguments
 {
     int c;
 	inputfile = NULL;
@@ -139,7 +139,7 @@ void arguments( int argc, char *argv[] )
 }
 
 
-int main( int argc, char *argv[] )
+int main( int argc, char *argv[] ) //main of the file
 {
 	static char com[10000];
 	static int  *nlen;	

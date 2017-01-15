@@ -1,8 +1,9 @@
+//this file contains some definitions of variables used all over the code
 #include <stdio.h>
 #include "dp.h"
 #include "mltaln.h"
 
-int TLS commonAlloc1 = 0;
+int TLS commonAlloc1 = 0; // what is TLS ?
 int TLS commonAlloc2 = 0;
 int TLS **commonIP = NULL;
 int TLS **commonJP = NULL;
