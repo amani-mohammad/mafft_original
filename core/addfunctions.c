@@ -1,6 +1,6 @@
 #include "mltaln.h"
 
-static void strncpy0( char *s1, char *s2, int n )
+static void strncpy0( char *s1, char *s2, int n ) //copy string s2 to s1 with length n
 {
 	while( n-- ) *s1++ = *s2++;
 	*s1 = 0;
@@ -22,7 +22,7 @@ static void strncpy0o1( char *s1, char *s2, int n ) { while( n-- ) *s1++ = *s2++
 static void strncpy0o2( char *s1, char *s2, int n ) { while( n-- ) *s1++ = *s2++; *s1 = 0; }
 #endif
 
-static void eqpick( char *aseq, char *seq )
+static void eqpick( char *aseq, char *seq ) //copy chars from seq to aseq except '=' char
 {
 	for( ; *seq != 0; seq++ )
 	{
@@ -162,8 +162,8 @@ static void profilealignment( int n0, int n1, int n2, char **aln0, char **aln1, 
 		for( i=1; i<n2; i++ ) strcpy( aln2[i], cptr );
 		return;
 	}
-
-#if 1
+//the difference between calloc and malloc is that the former allocates memory and initializes it to 0, while the latter allocs it only. calloc takes a little more time than malloc
+#if 1 //this means the code between 'if 1' and 'else' will be compiled during compilation step
 	effarr0 = (double *)malloc( n0 * sizeof( double ) );
 	effarr2 = (double *)malloc( n2 * sizeof( double ) );
 	allgap0 = (int *)malloc( n0 * sizeof( int ) );
@@ -300,7 +300,7 @@ void eq2dashmatometehayaku( char **s, int n )
 	free( tobechanged );
 }
 
-void eq2dash( char *s )
+void eq2dash( char *s ) //replace every '=' with '-' in s
 {
 	while( *s )
 	{
@@ -312,7 +312,7 @@ void eq2dash( char *s )
 	}
 }
 
-static void plus2gapchar( char *s, char gapchar )
+static void plus2gapchar( char *s, char gapchar ) //replace '+' with gapchar
 {
 	while( *s )
 	{

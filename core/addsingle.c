@@ -158,11 +158,11 @@ static void fillgap( char *s, int len )
 	*s = 0;
 }
 
-static int lencomp( const void *a, const void *b ) // osoikamo
+static int lencomp( const void *a, const void *b ) // osoikamo //compare lengths of two strings
 {
 	char **ast = (char **)a;
 	char **bst = (char **)b;
-	int lena = strlen( *ast );
+	int lena = strlen( *ast ); //strlen method computes the length of the string str up to, but not including the terminating null character.
 	int lenb = strlen( *bst );
 //	fprintf( stderr, "a=%s, b=%s\n", *ast, *bst );
 //	fprintf( stderr, "lena=%d, lenb=%d\n", lena, lenb );
@@ -789,7 +789,7 @@ static void makenewgaplist( int *l, char *a )
 }
 
 
-void arguments( int argc, char *argv[] )
+void arguments( int argc, char *argv[] ) //parse arguments passed to this file
 {
     int c;
 
@@ -2847,7 +2847,7 @@ static void smoothing1( int njob, int nadd, int lenfull, char **seq, Blocktoreal
 //	for( i=0; i<lenfull+1; i++ ) fprintf( stderr, "i=%d, nnewres=%d, start=%d, end=%d\n", i, realign[i].nnewres, realign[i].start, realign[i].end );
 }
 	
-int main( int argc, char *argv[] )
+int main( int argc, char *argv[] ) //main function of this file
 {
 	static int  *nlen;	
 	static char **name, **seq;
