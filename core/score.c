@@ -1,3 +1,4 @@
+//i think this file determines the score matrix to be used
 #include "mltaln.h"
 
 #define DEBUG 0

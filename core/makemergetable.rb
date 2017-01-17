@@ -1,3 +1,4 @@
+#ruby script!!! eshm3na :D
 #!/bin/env ruby
 require 'getopts'
 

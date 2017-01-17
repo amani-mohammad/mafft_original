@@ -1,3 +1,4 @@
+//what is ereg and reg files?
 #include "mltaln.h"
 
 #define DEBUG 0

@@ -1,3 +1,4 @@
+//this files contains guide tree operations like calculating weight and distance
 #include "mltaln.h"
 
 #define DEBUG 0
@@ -13,7 +14,7 @@ Node *stopol_g;
 #endif
 
 
-void checkMinusLength( int nseq, double **len )
+void checkMinusLength( int nseq, double **len ) //if length < min, set to min
 {
 	int i, j;
 	for( i=0; i<nseq-1; i++ ) for( j=0; j<2; j++ ) 
@@ -72,14 +73,14 @@ int *negativeMember( int *query, int locnseq )
 	return( bk );
 }
 
-int IntExistsInVec( int query, int *vector )
+int IntExistsInVec( int query, int *vector ) //check if an int exists in a vector
 {
 	while( *vector != -1 )
 		if( query == *vector++ ) return( 1 );
 	return( 0 );
 }
 
-NodeInCub searchParent( int top, int ***topol, int Start, int End )
+NodeInCub searchParent( int top, int ***topol, int Start, int End ) //what i understand is that topol is 2d matrix of vectors
 {
 	int i, j;
 	NodeInCub value;
@@ -276,8 +277,8 @@ void treeCnv( Node *stopol, int locnseq, int ***topol, double **len, double **bw
 
 int isLeaf( Node node )
 {
-	if( node.children[1] ) return( 0 );
-	else                   return( 1 );
+	if( node.children[1] ) return( 0 ); //return 0 if it is not leaf, i.e. has children
+	else                   return( 1 ); //return 1 if it is leaf, i.e. has no children
 }
 
 double syntheticLength( Node *ob, Node *oppositeNode )
@@ -347,7 +348,7 @@ double syntheticLength( Node *ob, Node *oppositeNode )
 	return( value );
 }
 
-double calcW( Node *ob, Node *op )
+double calcW( Node *ob, Node *op )//i think this calculates the weight of a node
 {
 	int i, count;
 	int dir_ch[3];
@@ -397,7 +398,7 @@ double calcW( Node *ob, Node *op )
 
 	return( value );
 }
-
+//calculate weight of branch
 void calcBranchWeight( double **bw, int locnseq, Node *stopol, int ***topol, double **len )
 {
 	NodeInCub parent;
@@ -442,7 +443,7 @@ void calcBranchWeight( double **bw, int locnseq, Node *stopol, int ***topol, dou
 	bw[locnseq-2][0] = topW * btmW;
 	bw[locnseq-2][1] = 1.0;
 }
-
+//calculate weight to a weight of pair
 void branchWeightToPairWeight( int locnseq, int ***topol, double **pw, double **bw )
 {
 	int i, j, k, n0, n1;

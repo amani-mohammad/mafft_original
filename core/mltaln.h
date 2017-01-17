@@ -1,3 +1,5 @@
+//this file contains declarations and definitions of most variables and functions used all over the app
+
 #define USE_XCED 0
 
 #if USE_XCED
