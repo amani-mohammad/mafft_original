@@ -1,3 +1,4 @@
+//i think this files contains many gap calculation methods used in alignment
 #include "mltaln.h"
 #include "dp.h"
 
