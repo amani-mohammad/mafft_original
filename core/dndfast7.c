@@ -1,3 +1,4 @@
+//read fasta, different from dndfast4
 #include "mltaln.h"
 #include <sys/types.h>
 #include <unistd.h>

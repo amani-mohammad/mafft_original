@@ -1,3 +1,4 @@
+//read fasta data
 #include "mltaln.h"
 #include <sys/types.h>
 #include <unistd.h>
