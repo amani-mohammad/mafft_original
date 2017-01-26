@@ -1,3 +1,4 @@
+//alignment methods with FFT
 #include "mltaln.h"
 
 #if 0

@@ -1,3 +1,4 @@
+//This files contains the main methods for printing in the console during the run
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

@@ -1,3 +1,4 @@
+//all files read/write methods and other streams methods
 #include "mltaln.h"
 
 static int upperCase = 0;

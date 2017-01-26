@@ -1,4 +1,4 @@
- /* iteration  ( algorithm C ) */
+/* iteration  ( algorithm C ) */
 #include "mltaln.h"
 
 #define DEBUG 0

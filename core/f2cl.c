@@ -1,3 +1,4 @@
+//uses clustal algorithm
 #include "mltaln.h"
 
 #define DEBUG 0

@@ -1,3 +1,4 @@
+//FFT methods for all steps
 #include "mltaln.h"
 
 #define SEGMENTSIZE 150
@@ -69,7 +70,7 @@ Fukusosuu **AllocateFukusosuuMtx( int l1, int l2 )
 	return( value );
 }
 
-Fukusosuu ***AllocateFukusosuuCub( int l1, int l2, int l3 )
+Fukusosuu ***AllocateFukusosuuCub( int l1, int l2, int l3 ) //what is Fukusosuu ?!!! :D
 {
 	Fukusosuu ***value;
 	int i;

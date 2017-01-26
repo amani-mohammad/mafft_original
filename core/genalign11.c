@@ -1,3 +1,4 @@
+//similar to Galign11 with small differences
 #include "mltaln.h"
 #include "dp.h"
 
@@ -6,7 +7,7 @@
 #define XXXXXXX    0
 #define USE_PENALTY_EX  1
 
-static TLS int localstop;
+static TLS int localstop; //localstop variable which is defined in the CUDA MAFFT paper
 
 #if 1
 static void match_calc_mtx( double **mtx, double *match, char **s1, char **s2, int i1, int lgth2 ) 

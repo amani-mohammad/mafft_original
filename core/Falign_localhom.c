@@ -1,3 +1,4 @@
+//segments and sorting methods
 #include "mltaln.h"
 
 //static FILE *fftfp;
@@ -120,7 +121,7 @@ static int segcmp( void *ptr1, void *ptr2 )
 #endif
 
 
-static void mymergesort( int first, int last, Segment **seg )
+static void mymergesort( int first, int last, Segment **seg ) //merge sort method
 {
 	int middle;
 	static TLS int i, j, k, p;

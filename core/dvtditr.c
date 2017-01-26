@@ -1,4 +1,6 @@
- /* Tree-dependent-iteration */
+//Iterative refinement method
+
+/* Tree-dependent-iteration */
  /* Devide to segments       */ 
 
 #include "mltaln.h"
@@ -680,7 +682,7 @@ int main( int argc, char *argv[] )
 	if( rnakozo && rnaprediction == 'm' )
 	{
 		singlerna = (RNApair ***)calloc( njob, sizeof( RNApair ** ) );
-		prep = fopen( "hat4", "r" );
+		prep = fopen( "hat4", "r" ); //what is hat4 ?
 		if( prep == NULL ) ErrorExit( "Make hat4 using mccaskill." );
 		fprintf( stderr, "Loading 'hat4' ... " );
 		fflush( stderr );
@@ -709,7 +711,7 @@ int main( int argc, char *argv[] )
 
 	if( utree )
 	{
-		prep = fopen( "hat2", "r" );
+		prep = fopen( "hat2", "r" ); //what is hat2 ?
 		if( !prep ) ErrorExit( "Make hat2." );
 		readhat2_pointer( prep, njob, name, eff );
 		fclose( prep );

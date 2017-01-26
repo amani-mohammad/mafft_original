@@ -1,3 +1,4 @@
+//I think this is global alignment
 #include "mltaln.h"
 #include "dp.h"
 
