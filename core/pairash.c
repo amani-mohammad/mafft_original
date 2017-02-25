@@ -1,3 +1,4 @@
+//some strings and pair alignment methods - what is ash ?
 #include "mltaln.h"
 
 #define DEBUG 0

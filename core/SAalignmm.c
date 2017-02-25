@@ -1,3 +1,4 @@
+//SA alignment
 #include "mltaln.h"
 #include "dp.h"
 

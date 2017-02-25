@@ -1,3 +1,4 @@
+//main method takes many params and process them
 #include "mltaln.h"
 
 #define DEBUG 0

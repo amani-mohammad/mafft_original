@@ -1,3 +1,4 @@
+//i think this is neighbor joining for tree
 #include "mltaln.h"
 #define DEBUG 0
 

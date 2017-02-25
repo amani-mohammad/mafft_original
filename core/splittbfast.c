@@ -1,3 +1,4 @@
+//what is fast? it contains methods for blast and fasta also
 #include "mltaln.h"
 
 

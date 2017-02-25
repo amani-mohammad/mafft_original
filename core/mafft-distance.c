@@ -1,3 +1,4 @@
+// I think this file contains methods to calculate distance between sequences
 #include "mltaln.h"
 #include "mtxutl.h"
 

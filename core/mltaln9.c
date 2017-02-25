@@ -1,3 +1,4 @@
+//tree methods and i think after group alignment tree construction
 #include "mltaln.h"
 
 #define DEBUG 0
@@ -5,7 +6,7 @@
 #define MEMSAVE 1
 
 
-
+//this method calculates the length of sequence without gaps
 #if 0
 int seqlen( char *seq )
 {
@@ -34,14 +35,14 @@ int seqlen( char *seq )
 	return( val );
 }
 #endif
-
+//calculate length of an integer
 int intlen( int *num )
 {
 	int value = 0;
 	while( *num++ != -1 ) value++;
 	return( value );
 }
-
+//check sequence characters and report error if unusual character is found
 char seqcheck( char **seq )
 {
 	int i, len;
@@ -72,7 +73,7 @@ char seqcheck( char **seq )
 	}
 	return( 0 );
 }
-
+//concatenate two integers
 void intcat( int *s1, int *s2 )
 {
 	while( *s1 != -1 ) s1++;
@@ -83,7 +84,7 @@ void intcat( int *s1, int *s2 )
 	}
 	*s1 = -1;
 }
-
+//copy integer s2 into s1
 void intcpy( int *s1, int *s2 )
 {
 	while( *s2 != -1 ) 
@@ -93,24 +94,24 @@ void intcpy( int *s1, int *s2 )
 	}
 	*s1 = -1;
 }
-
+//copy n characters from integer s2 into s1
 void intncpy( int *s1, int *s2, int n )
 {
 	while( n-- ) *s1++ = *s2++;
 }
-
+//copy n characters from float s2 into s1
 void fltncpy( double *s1, double *s2, int n )
 {
 	while( n-- ) *s1++ = *s2++;
 }
-
+//count characters in an integer
 static int countmem( int *s )
 {
 	int v = 0;
 	while( *s++ != -1 ) v++;
 	return( v );
 }
-
+//get last character in an integer
 static int lastmem( int *s )
 {
 	while( *s++ != -1 ) 

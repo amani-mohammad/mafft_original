@@ -1,3 +1,4 @@
+//what is meant by suboptalign ?
 #include "mltaln.h"
 #include "dp.h"
 

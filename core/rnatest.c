@@ -1,3 +1,4 @@
+//RNA testing methods
 #include "mltaln.h"
 
 #define DEBUG 0

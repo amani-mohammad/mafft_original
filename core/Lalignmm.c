@@ -1,3 +1,4 @@
+//I think this file contains methods for multiple sequence alignment methods
 #include "mltaln.h"
 #include "dp.h"
 

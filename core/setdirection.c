@@ -1,3 +1,4 @@
+//check directions of nucleotide sequences
 #include "mltaln.h"
 
 #define DEBUG 0

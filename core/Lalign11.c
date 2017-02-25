@@ -1,3 +1,4 @@
+// I think this file contains methods for local alignment and matrices allocation
 #include "mltaln.h"
 #include "dp.h"
 
@@ -7,7 +8,7 @@
 #define USE_PENALTY_EX  1
 
 
-static TLS int localstop; // 060910
+static TLS int localstop; // 060910 //what is TLS? and what does it mean?
 
 #if 1
 static void match_calc_mtx( double **mtx, double *match, char **s1, char **s2, int i1, int lgth2 ) 

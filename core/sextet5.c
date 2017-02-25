@@ -1,3 +1,4 @@
+//make point table
 #include "mltaln.h"
 #include "mtxutl.h"
 

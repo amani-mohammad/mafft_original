@@ -1,3 +1,4 @@
+//allocate matrices
 #include "mltaln.h"
 
 #define DEBUG 0

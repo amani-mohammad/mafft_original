@@ -1,3 +1,4 @@
+//Matrix utilitis header file
 void MtxuntDouble( double **, int );
 void MtxmltDouble( double **, double **, int );
 

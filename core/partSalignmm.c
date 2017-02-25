@@ -1,3 +1,4 @@
+//gap penalty calculation methods + pair alignment methods
 #include "mltaln.h"
 #include "dp.h"
 

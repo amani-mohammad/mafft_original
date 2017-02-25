@@ -1,3 +1,4 @@
+//RNA and its folding methods 
 #include "mltaln.h"
 #include "dp.h"
 

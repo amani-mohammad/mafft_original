@@ -1,3 +1,4 @@
+//what is direction list?
 #include "mltaln.h"
 
 #define DEBUG 0

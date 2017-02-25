@@ -1,3 +1,4 @@
+//multiple to hat3 alignment. but what is hat3 ?!!! :D
 #include "mltaln.h"
 
 #define DEBUG 0

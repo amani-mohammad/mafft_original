@@ -1,3 +1,4 @@
+//done - i think it means tree-dependent distance
 #include "mltaln.h"
 
 #define DEBUG 0

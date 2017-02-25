@@ -1,3 +1,4 @@
+//group alignment methods - group to group alignment
 #include "mltaln.h"
 
 #define DEBUG 0 
@@ -16,7 +17,7 @@ double getrusage_sec()
 }
 #endif
 
-
+//return 1 if strings are not equal and 0 else
 int intcmp( int *str1, int *str2 )
 {
 	while( *str1 != -1 && *str2 != -1 )

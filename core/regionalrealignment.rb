@@ -1,3 +1,4 @@
+#ruby script for fasta reading and realignment
 #! /usr/bin/env ruby
 
 $MAFFTCOMMAND = '"/usr/local/bin/mafft"'

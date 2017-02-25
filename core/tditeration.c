@@ -1,4 +1,4 @@
-
+//tree-dependent iterations
 /* 
 	tree-dependent iteration   
     algorithm A+ when group-to-group, C when group-to-singleSeqence 
