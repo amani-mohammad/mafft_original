@@ -1,3 +1,4 @@
+//what is beta ?
 /*
  *
  * Beta.hpp

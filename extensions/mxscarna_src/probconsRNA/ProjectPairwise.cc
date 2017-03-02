@@ -2,7 +2,7 @@
 // ProjectPairwise
 //
 // Program for projecting multiple alignments to all pairwise
-// alignments.
+// alignments. 
 /////////////////////////////////////////////////////////////////
 
 #include "SafeVector.h"

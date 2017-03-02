@@ -1,7 +1,6 @@
 #include "energy_param.hpp"
 
 
-
 namespace MXSCARNA {
 const int    energy_param::INF       = 10000;
 const int    energy_param::NST       = 0;

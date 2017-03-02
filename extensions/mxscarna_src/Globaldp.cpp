@@ -1,3 +1,4 @@
+//Global Alignment of two profile computed by SCARNA algorithm
 #include "Globaldp.hpp"
 
 namespace MXSCARNA {

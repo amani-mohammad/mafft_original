@@ -1,4 +1,4 @@
-
+//constants
 #ifndef __SCARNA_HPP__
 #define __SCARNA_HPP__
 

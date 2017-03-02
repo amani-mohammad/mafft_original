@@ -1,3 +1,4 @@
+//McCaskill's Algorithm
 /*
   McCaskill's Algorithm -- The algorithm calculates a base paring probability matrix from the input of one sequence.
 

@@ -1,3 +1,4 @@
+//header cpp file for AlifoldMEA
 #ifndef _ALIFOLDMEA_H_
 #define _ALIFOLDMEA_H_
 

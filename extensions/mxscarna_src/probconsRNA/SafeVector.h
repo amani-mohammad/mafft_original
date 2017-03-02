@@ -2,7 +2,7 @@
 // SafeVector.h
 //
 // STL vector with array bounds checking.  To enable bounds
-// checking, #define ENABLE_CHECKS.
+// checking, #define ENABLE_CHECKS. 
 /////////////////////////////////////////////////////////////////
 
 #ifndef SAFEVECTOR_H

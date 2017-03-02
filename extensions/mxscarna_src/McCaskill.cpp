@@ -1,3 +1,4 @@
+//what is McCaskill?
 #include <iostream>
 #include "McCaskill.hpp"
 //#include "energy_param3.hpp"

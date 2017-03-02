@@ -1,4 +1,5 @@
-/* 
+
+/*
    prototypes for energy_par.c
 */
 

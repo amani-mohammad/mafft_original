@@ -1,3 +1,4 @@
+//params header
 #include "energy_const.h"
 typedef struct {
   int id;

@@ -5,7 +5,7 @@
 // probabilities were computed using the program used to build
 // the BLOSUM62 matrix from the BLOCKS 5.0 dataset.  Transition
 // parameters were obtained via unsupervised EM training on the
-// BALIBASE 2.0 benchmark alignment database.
+// BALIBASE 2.0 benchmark alignment database. 
 /////////////////////////////////////////////////////////////////
 
 #ifndef DEFAULTS_H

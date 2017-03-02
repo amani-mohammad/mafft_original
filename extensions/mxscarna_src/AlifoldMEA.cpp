@@ -1,3 +1,4 @@
+//cpp extension for alifoldMEA
 #include "AlifoldMEA.h"
 
 namespace MXSCARNA{

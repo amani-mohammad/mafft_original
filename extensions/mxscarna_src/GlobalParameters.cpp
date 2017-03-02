@@ -1,3 +1,4 @@
+//This file include Global Parameters, command line options, etc.
 //////////////////////////////////////////////////////////////
 // GlobalParameters.cpp
 // This file include Global Parameters, command line options, etc.

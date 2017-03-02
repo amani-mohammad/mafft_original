@@ -2,7 +2,7 @@
 // CompareToRef.cc
 //
 // Program for scoring alignments according to the SUM-OF-PAIRS
-// or COLUMN score.
+// or COLUMN score. 
 /////////////////////////////////////////////////////////////////
 
 #include "SafeVector.h"

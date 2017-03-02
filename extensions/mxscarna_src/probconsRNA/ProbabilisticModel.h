@@ -3,7 +3,7 @@
 //
 // Routines for (1) posterior probability computations
 //              (2) chained anchoring
-//              (3) maximum weight trace alignment
+//              (3) maximum weight trace alignment 
 /////////////////////////////////////////////////////////////////
 
 #ifndef PROBABILISTICMODEL_H

@@ -26,9 +26,7 @@
 
     A.E. Peritz, R. Kierzek, N, Sugimoto, D.H. Turner
     "Thermodynamic Study of Internal Loops in Oligoribonucleotides..."
-    Biochemistry 1991, 30, 6428--6435
-
-    
+    Biochemistry 1991, 30, 6428--6435    
 */
 
 #ifndef ENERGY_PARAM_H
